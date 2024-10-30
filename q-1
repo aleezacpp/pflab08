@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main(){
+    int start; 
+    int end; 
+    int prime;
+    printf("enter starting n : \n");
+    scanf("%d",&start);
+    printf("enter ending n : \n");
+    scanf("%d",&end);
+    int div;
+    for (int i=start;i<=end;i++){
+        if (i<2){
+            continue;
+        }
+        prime=1;
+        for (int j=2;j*j<=i;j++){
+            if (i%j==0){
+                prime=0;
+                break;
+            }
+            // else prime=1;
+        }
+         if (prime==1){
+            printf("%d ",i);
+        }
+    }
+
+}
