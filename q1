@@ -1,11 +1,13 @@
-//Task: Print a right-angled triangle pattern using nested loops.
+/*Write a C program to generate the following pattern:
+1
+1 2
+1 2 3
+1 2 3 4*/
 #include <stdio.h>
 int main(){
-    int i;
-    int j;
-    for (i=1;i<=6;i++){
-        for (j=1;j<i;j++){
-            printf("*");
+    for (int i=1;i<=4;i++){
+        for (int j=1;j<=i;j++){
+            printf("%d",j);
         }
         printf("\n");
     }
